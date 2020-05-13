@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:id="@+id/linearLayout">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bton"
+        android:text="BTON" />
+
+    <Button
+        android:id="@+id/btoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTOFF" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOW"
+        android:id="@+id/showPaired" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listen"
+        android:text="LISTEN" />
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="monitor"
+         android:id="@+id/monitor"></Button>
+
+
+</LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status"
+        android:layout_below="@+id/linearLayout"
+        android:text="STATUS"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/received"
+        android:layout_below="@+id/status"
+        android:text=":::"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/distance"
+        android:layout_below="@+id/received"
+        android:text=":::DISTANCE"></TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDisplay"
+        android:layout_below="@+id/distance"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDisplayConnected"
+        android:layout_below="@+id/textViewDisplay"
+        android:text="Available Devices: "/>
+
+    <TextView
+        android:id="@+id/connectedDevices"
+        android:layout_below="@+id/textViewDisplayConnected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="++++++++++"></TextView>
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/connectedDevices"
+        android:id="@+id/editText1"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/connectedDevices"
+        android:layout_toRightOf="@+id/editText1"
+        android:id="@+id/editText2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_below="@+id/connectedDevices"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/editText2"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:id="@+id/editText3"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_toRightOf="@+id/editText3"
+        android:id="@+id/editText4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/editText4"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:id="@+id/editText5"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText4"
+        android:layout_toRightOf="@+id/editText5"
+        android:id="@+id/editText6"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/editText6"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText5"
+        android:id="@+id/editText7"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText6"
+        android:layout_toRightOf="@+id/editText7"
+        android:id="@+id/editText8"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_toRightOf="@+id/editText8"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="50dp"/>
+
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MATRIX ON SLAVE"
+        android:layout_below="@+id/editText8"
+        android:layout_marginTop="30dp"
+        android:id="@+id/matrix"></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MATRIX ON MASTER"
+        android:layout_below="@+id/editText8"
+        android:layout_toRightOf="@+id/matrix"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/matrixmaster"></Button>
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/matrixmaster"
+        android:id="@+id/list_devices"></ListView>
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="SENDMSG"
+       android:layout_below="@+id/list_devices"
+       android:id="@+id/sendMsg"></Button>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendMsg"
+        android:id="@+id/monitoring"
+        android:textColor="@color/colorPrimary"
+        android:text="::"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/monitoring"
+        android:id="@+id/timetakentext"
+        android:textColor="@color/colorPrimary"
+        android:text=""></TextView>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/timetakentext"
+    android:id="@+id/battery"
+    android:text="BATTERY INFO"></TextView>
+
+
+
+
+
+</RelativeLayout>
+
+</ScrollView>
